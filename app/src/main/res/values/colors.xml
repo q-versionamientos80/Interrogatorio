@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#5A769C</color>
+    <color name="twitter">#1da1f3</color>
+    <color name="facebook">#3b5998</color>
+    <color name="red1">#B3444E</color>
+    <color name="red2">#622332</color>
+    <color name="colorPublicodark">#24173F</color>
+    <color name="colorPublicoclear">#7F528E</color>
+    <color name="colorProcesaldark">#744075</color>
+    <color name="colorProcesalclear">#7B7DD5</color>
+    <color name="colorCivildark">#2E4162</color>
+    <color name="colorCivilclear">#5A769C</color>
+    <color name="colorLaboralclear">#7BA2C3</color>
+    <color name="colorLaboraldark">#456990</color>
+    <color name="colorComercialdark">#B3444E</color>
+    <color name="colorComercialclear">#DA7986</color>
+    <color name="colorPenaldark">#622332</color>
+    <color name="colorPenalclear">#9C4860</color>
+    <color name="gray1">#FAFAFA</color>
+    <color name="gray">#8f8b8b</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="RespuestaCorrecta">#009674</color>
+    <color name="RespuestaSeleccionada">#db5460</color>
+</resources>

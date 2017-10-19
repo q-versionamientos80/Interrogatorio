@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="qantica.com.interrogatorio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider251588551934616"
+            android:exported="true" />
+
+        <activity android:name=".Statistics" />
+        <activity android:name=".Main_interrogatorio" />
+        <activity android:name=".Intro" />
+        <activity android:name=".Categoria" />
+        <activity android:name=".CivilView" />
+        <activity android:name=".ComercialView" />
+        <activity android:name=".Confirmacion" />
+        <activity android:name=".LaboralView" />
+        <activity android:name=".LevelView" />
+        <activity android:name=".MasterGame" />
+        <activity android:name=".MasterStatistics" />
+        <activity android:name=".PenalView" />
+        <activity android:name=".PublicoView" />
+        <activity android:name=".ProcesalView" />
+        <activity android:name=".Respuestas_Amateur" />
+        <activity android:name=".Respuestas_Master" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="df320ecdcfd78ecdc6368f422ee9ccd3c21b3c1f" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_categoria"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="qantica.com.interrogatorio.ProcesalView">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.87"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradiente_procesal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7">
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+            <include
+                layout="@layout/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.13"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.55">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.06">
+                    <TextView
+                        android:id="@+id/tv_subheader"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Selecciona las sub-categorías que desees y pulsa el botón inferior para confirmar"
+                        android:textColor="@color/colorProcesaldark"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.55">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="345dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                    <CheckBox
+                                        android:id="@+id/pro_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="49dp"
+                                        android:button="@drawable/checkbox_procesal"
+                                        android:fontFamily="sans-serif-light"
+                                        android:gravity="center_vertical"
+                                        android:onClick="onCheckBoxClicked"
+                                        android:paddingLeft="20dp"
+                                        android:text="Civil General"
+                                        android:textColor="@color/gray"
+                                        android:textSize="20sp"
+                                        android:theme="@style/MyCheckBox" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6"></LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/ly_civil_general_procesal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:background="@drawable/civil_general_procesal_off"
+                                            android:orientation="horizontal"></LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorProcesaldark"></LinearLayout>
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                    <CheckBox
+                                        android:id="@+id/pro_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Civil Especial"
+                                        android:textColor="@color/gray"
+                                        android:textSize="20sp"
+                                        android:fontFamily="sans-serif-light"
+                                        android:gravity="center_vertical"
+                                        android:onClick="onCheckBoxClicked"
+                                        android:theme="@style/MyCheckBox"
+                                        android:paddingLeft="20dp"
+                                        android:button="@drawable/checkbox_procesal"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6"></LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                        <LinearLayout
+                                            android:id="@+id/ly_civil_especial_procesal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:background="@drawable/civil_especial_procesal_off"
+                                            android:orientation="horizontal"></LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+
+                        // Se desactiva la sub-categoria Laboral
+
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorProcesaldark"></LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                    <CheckBox
+                                        android:id="@+id/pro_3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Laboral"
+                                        android:textColor="@color/gray"
+                                        android:textSize="20sp"
+                                        android:fontFamily="sans-serif-light"
+                                        android:gravity="center_vertical"
+                                        android:onClick="onCheckBoxClicked"
+                                        android:theme="@style/MyCheckBox"
+                                        android:paddingLeft="20dp"
+                                        android:button="@drawable/checkbox_procesal"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6"></LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                        <LinearLayout
+                                            android:id="@+id/ly_laboral_procesal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:background="@drawable/laboral_procesal_off"
+                                            android:orientation="horizontal"></LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>-->
+
+                        // Se desactiva la sub-categoría Penal
+
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorProcesaldark"></LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                    <CheckBox
+                                        android:id="@+id/pro_4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Penal"
+                                        android:textColor="@color/gray"
+                                        android:textSize="20sp"
+                                        android:fontFamily="sans-serif-light"
+                                        android:gravity="center_vertical"
+                                        android:onClick="onCheckBoxClicked"
+                                        android:theme="@style/MyCheckBox"
+                                        android:paddingLeft="20dp"
+                                        android:button="@drawable/checkbox_procesal"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6"></LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                        <LinearLayout
+                                            android:id="@+id/ly_penal_procesal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:background="@drawable/penal_procesal_off"
+                                            android:orientation="horizontal"></LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>-->
+
+                        // Se desactiva la sub-categoría Probatorio
+
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorProcesaldark"></LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                    <CheckBox
+                                        android:id="@+id/pro_5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Probatorio"
+                                        android:textColor="@color/gray"
+                                        android:textSize="20sp"
+                                        android:fontFamily="sans-serif-light"
+                                        android:gravity="center_vertical"
+                                        android:onClick="onCheckBoxClicked"
+                                        android:theme="@style/MyCheckBox"
+                                        android:paddingLeft="20dp"
+                                        android:button="@drawable/checkbox_procesal"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6"></LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                        <LinearLayout
+                                            android:id="@+id/ly_probatorio_procesal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:background="@drawable/probatorio_procesal_off"
+                                            android:orientation="horizontal"></LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>-->
+
+                        // Se desactiva la sub-categoría constitucional
+
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorProcesaldark"></LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                    <CheckBox
+                                        android:id="@+id/pro_6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="49dp"
+                                        android:button="@drawable/checkbox_procesal"
+                                        android:fontFamily="sans-serif-light"
+                                        android:gravity="center_vertical"
+                                        android:onClick="onCheckBoxClicked"
+                                        android:paddingLeft="20dp"
+                                        android:text="Constitucional"
+                                        android:textColor="@color/gray"
+                                        android:textSize="20sp"
+                                        android:theme="@style/MyCheckBox" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6"></LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                        <LinearLayout
+                                            android:id="@+id/ly_constitucional_procesal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:background="@drawable/constitucional_procesal_off"
+                                            android:orientation="horizontal"></LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorProcesaldark"></LinearLayout>-->
+
+
+
+                        // Se desactiva la sub-categoría administrativo
+
+                        <!--<LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                    <CheckBox
+                                        android:id="@+id/pro_7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="49dp"
+                                        android:button="@drawable/checkbox_procesal"
+                                        android:fontFamily="sans-serif-light"
+                                        android:gravity="center_vertical"
+                                        android:onClick="onCheckBoxClicked"
+                                        android:paddingLeft="20dp"
+                                        android:text="Administrativo"
+                                        android:textColor="@color/gray"
+                                        android:textSize="20sp"
+                                        android:theme="@style/MyCheckBox" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6"></LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                        <LinearLayout
+                                            android:id="@+id/ly_administrativo_procesal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.3"
+                                            android:background="@drawable/administrativo_procesal_off"
+                                            android:orientation="horizontal"></LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.4"></LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>-->
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:onClick="Sig"
+                    android:src="@drawable/next"
+                    app:backgroundTint="@color/colorProcesaldark"
+                    app:elevation="0dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

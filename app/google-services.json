@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "892672958191",
+    "project_id": "firebase-interrogatorio"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892672958191:android:aa88cac1aed4c4f7",
+        "android_client_info": {
+          "package_name": "qantica.com.interrogatorio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwA2esGeE4S80KytkswYuK5bKFC-KcP2s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-92126687-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
